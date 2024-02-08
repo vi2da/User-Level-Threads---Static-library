@@ -1,8 +1,5 @@
-/*
- * SIGINT signal handler demo program.
- * Hebrew University OS course.
- * Author: OS, os@cs.huji.ac.il
- */
+/* SIGINT signal handler demo program. */
+
 
 #include <stdio.h>
 #include <signal.h>

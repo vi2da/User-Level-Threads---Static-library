@@ -1,8 +1,5 @@
-/*
- * sigsetjmp/siglongjmp demo program.
- * Hebrew University OS course.
- * Author: OS, os@cs.huji.ac.il
- */
+/* sigsetjmp/siglongjmp demo program. */
+
 
 #include <stdio.h>
 #include <setjmp.h>

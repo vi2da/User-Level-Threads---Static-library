@@ -1,3 +1,5 @@
+/* Interval-timer demo program. */
+
 
 #include <stdio.h>
 #include <signal.h>
