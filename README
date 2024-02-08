@@ -1,0 +1,86 @@
+david.oh, yonia01
+Student David ohayon (304249386), Yoni Asulin (021567466)
+EX: 2
+
+FILES:
+uthreads.cpp -- a file with the scheduler implementation
+Makefile
+README
+
+REMARKS:
+None
+
+ANSWERS:
+
+Question 1:
+-----------
+Web browsers IE, Firefox, Chromium/Chrome use user-level threads.
+For Chromium, a new user level thread is created whenever you open a new tab.
+User level threads are more configurable,
+as they may use any scheduling algorithm,
+and they can also run on any OS (probably even DOS)
+since they do not require kernel support for multiple threads.
+User level threading is also much faster,
+as they don't need to trap to kernel space and back again.
+
+Question 2:
+-----------
+The advantages of creating new process instead of creating kernel-level thread are:
+
+*The first advantage is that processes are independant, but threads are subsets
+of the same process that force them to be dependant.
+Because of this' in a case that one of the tabs crashes, so if the tab is a seperate process,
+crashing of the tav will not effect the rest of the
+tabs, but a kernel level thread crashing, can crash the  process.
+And this crash will  crash the chrome application.
+
+*The second advantage is that processes don't share memory space,
+whereas  the kernel level threads share most of their memory spaces.
+
+The disadvantages of creating new process instead of creating kernel-level thread are:
+
+*The first disadvantage that creatinga process  is less efficient to intercom between processes threw a pipe,
+than communicating between threads. More than that threads sharing information
+makes communication between them more efficient than between processes and by that will result less 
+overhead.
+But we have to admit that itsn't common that are a lot
+of communication between different tabs, and because of this we find the
+process method is more effective.
+
+*The second disadvantage is that switching and creating different processes
+is more expensive than in kernel
+mode threads.
+
+Question 3:
+-----------
+We opened the scummvm application and found its pid with the ps -A command.
+Then opened the shell and killed the scummvm process .
+The kill command, sends an interrupt which raises a signal
+to the shell process to handle the typing.
+When we press enter cause the shell to process the kill command and handle
+it according to the pid given from the user.
+After killing the application we triggered a SIGTERM signal to the process.
+After it the signal sent by the o.s to this specific process of scummvm
+and tells it to shut down cleanly.
+When scummvm recieves SIGTERM it want to exit, which occurs by sending an
+interrupt to the OS which tells it to call the function that handles killing
+a process.
+
+Question 4:
+-----------
+Real time - measures the real physical time - the time from an epoch - 1.1.1970 00:00 GMT.
+Clock that can always tell the time and always keep running without take in
+account the current running process in the system.
+The real time clock will keep on running.
+We use real timer when we program an alarm clock system for our computer,
+and we want the program to know the real time in the physical world, so it will be able to
+know when to wake us up (or alarm us about something).
+
+Virtual time- measures the time inside some application or process.
+i.e time in terms of CPU utilization - how many CPU cycles the process took.
+
+In other words the virtual clock will only run when the process is running.
+We use virtual time when we want a very efficient measuring time during the program.
+And we want use a little times as possible on the cpu, we can build a tester function which times
+the virtual time of the process instead of the real time, in order to know if it
+is as efficient as we want it to be.
