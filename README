@@ -1,6 +1,5 @@
-david.oh, yonia01
-Student David ohayon (304249386), Yoni Asulin (021567466)
-EX: 2
+vi2da
+
 
 FILES:
 uthreads.cpp -- a file with the scheduler implementation
@@ -9,6 +8,15 @@ README
 
 REMARKS:
 None
+
+Makefile - #phony #tar #clean
+generate a static librery file named: libuthread.a when running 'make' with no arguments
+
+
+
+
+
+
 
 ANSWERS:
 
