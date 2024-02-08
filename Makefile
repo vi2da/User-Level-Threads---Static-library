@@ -1,3 +1,5 @@
+#vi2da
+
 CC= g++
 CFLAGS= -c -g -Wvla -Wextra -Wall -std=c++11
 TAR_TARGET =  Makefile README uthreads.cpp
