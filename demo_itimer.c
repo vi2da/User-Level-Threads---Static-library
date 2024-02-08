@@ -1,8 +1,3 @@
-/*
- * Interval-timer demo program.
- * Hebrew University OS course.
- * Author: OS, os@cs.huji.ac.il
- */
 
 #include <stdio.h>
 #include <signal.h>
