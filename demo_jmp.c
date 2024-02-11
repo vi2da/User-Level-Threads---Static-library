@@ -1,4 +1,4 @@
-/* sigsetjmp/siglongjmp demo program. */
+/* sigsetjmp/siglongjmp demo program */
 
 
 #include <stdio.h>
