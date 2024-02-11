@@ -1,4 +1,4 @@
-/* Interval-timer demo program. */
+/* Interval-timer demo program */
 
 
 #include <stdio.h>
