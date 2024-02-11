@@ -1,4 +1,4 @@
-/* SIGINT signal handler demo program. */
+/* SIGINT signal handler demo program */
 
 
 #include <stdio.h>
