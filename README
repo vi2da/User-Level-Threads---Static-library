@@ -1,6 +1,5 @@
 vi2da
 
-
 FILES:
 uthreads.cpp -- a file with the scheduler implementation
 Makefile
