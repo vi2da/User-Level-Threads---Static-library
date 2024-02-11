@@ -1,5 +1,5 @@
 /*
- * User-Level Threads Library (uthreads)
+ * User-Level Threads Staitc Library (uthreads)
  * Author: Created by david.oh on 4/21/17.
  */
 #include <stdio.h>
